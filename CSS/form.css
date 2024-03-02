@@ -8,3 +8,18 @@
     justify-content: center;
 }
 
+.form__input {
+    width: 100%;
+    padding: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
