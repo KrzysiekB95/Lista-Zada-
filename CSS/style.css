@@ -8,3 +8,14 @@ html {
     box-sizing: inherit;
 }
 
+.body {
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    margin: 20px;
+    font-size: 25px;
+    color: #4e4d4d;
+}
