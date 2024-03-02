@@ -8,6 +8,13 @@
     justify-content: center;
 }
 
+.form__legend {
+    background-color: #dadada;
+    border:2px solid black;
+    border-radius:10px;
+    padding: 10px;
+}
+
 .form__input {
     width: 100%;
     padding: 10%;
