@@ -1,15 +1,14 @@
 .form {
-    max-width: 400px;
+    width: 80%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 21px 18px 41px -2px #42445a;
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .form__legend {
     background-color: #dadada;
+    color:#007bff;
     border:2px solid black;
     border-radius:10px;
     padding: 10px;
@@ -17,7 +16,7 @@
 
 .form__input {
     width: 100%;
-    padding: 10%;
+    padding: 3%;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 10px;
