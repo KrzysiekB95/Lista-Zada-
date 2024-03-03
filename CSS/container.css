@@ -6,3 +6,9 @@
     padding: 20px;
     margin-top: 20px;
 }
+
+.container__paragraph {
+    font-weight: 600;
+    font-size: large;
+    color: #0153aa;
+}
