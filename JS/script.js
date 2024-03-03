@@ -20,7 +20,7 @@ const toggleTaskDone = (taskIndex) => {
 };
 
 const bindEvents = () => {
-    const taskList = document.querySelector(".js-staskList");
+    const taskList = document.querySelector(".js-taskList");
     taskList.addEventListener("click", (event) => {
         if (event.target.classList.contains("js-delete")) {
             const taskIndex = [...taskList.children].indexOf(event.target.parentElement);
