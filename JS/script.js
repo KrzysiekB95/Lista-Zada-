@@ -20,17 +20,20 @@ const toggleTaskDone = (taskIndex) => {
 };
 
 const bindEvents = () => {
-    const taskList = document.querySelector(".js-taskList");
-    taskList.addEventListener("click", (event) => {
-        if (event.target.classList.contains("js-delete")) {
-            const taskIndex = [...taskList.children].indexOf(event.target.parentElement);
-            removeTask(taskIndex);
-        } else if (event.target.classList.contains("js-done")) {
-            const taskIndex = [...taskList.children].indexOf(event.target.parentElement);
-            toggleTaskDone(taskIndex);
-        }
+    const buttonsDone = document.querySelectorAll(".js-done");
+    buttonsDone.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            toggleTaskDone(index);
+        });
     });
-};
+
+    const buttonsDelete = document.querySelectorAll(".js-delete");
+    buttonsDelete.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            removeTask(index);
+        })
+    })
+}
 
 const render = () => {
     let htmlString = "";
