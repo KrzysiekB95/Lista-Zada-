@@ -39,10 +39,12 @@ const render = () => {
     let htmlString = "";
     for (const task of tasks) {
         htmlString += `
-            <li ${task.done ? 'style="text-decoration: line-through;"' : ""}>
+                <li class="taskList__task" ${task.done ? 'style="text-decoration: line-through;"' : ""}>
+                 <button class="taskList__buttonDone js-done">✓</button>
+                 <span class="taskList__text">
                 ${task.content}
-                <button class="js-delete">Usuń</button>
-                <button class="js-done">Zrobione</button>
+                </span>
+                <button class="taskList__buttonRemove js-delete">🗑️</button>
             </li>
         `;
     }
