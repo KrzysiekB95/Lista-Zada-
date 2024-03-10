@@ -22,7 +22,7 @@
 }
 
 .form__input {
-    width: 70%;
+    flex-grow:1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -30,7 +30,6 @@
 }
 
 .form__button {
-    width: 30%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
